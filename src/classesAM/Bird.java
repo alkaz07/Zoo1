@@ -1,4 +1,8 @@
-public abstract class Bird extends Animal{
+package classesAM;
+
+import classesAM.Animal;
+
+public abstract class Bird extends Animal {
 
     public Bird(double weight) {
         super(weight);

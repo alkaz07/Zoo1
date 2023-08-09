@@ -1,4 +1,10 @@
-public class Rabbit extends Animal implements Runnable, Jumpable, Swimmable, ColorChange{
+import classesAM.Animal;
+import interfacesAM.ColorChange;
+import interfacesAM.Jumpable;
+import interfacesNZ.Runnable;
+import interfacesNZ.Swimmable;
+
+public class Rabbit extends Animal implements Runnable, Jumpable, Swimmable, ColorChange {
 
     public Rabbit(double weight) {
         super(weight);

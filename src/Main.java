@@ -1,3 +1,6 @@
+import classesAM.Animal;
+import interfacesAM.Flyable;
+
 public class Main {
     public static void main(String[] args) {
         exemple1();

@@ -1,5 +1,9 @@
+package classesNZ;
 
-public class Squirrel extends Mammal implements Jumpable, Swimmable{
+import interfacesAM.Jumpable;
+import interfacesNZ.Swimmable;
+
+public class Squirrel extends Mammal implements Jumpable, Swimmable {
 
     public Squirrel(double weight) {
         super(weight);

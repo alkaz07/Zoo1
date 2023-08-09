@@ -1,3 +1,6 @@
+package classesAM;
+
+import interfacesNZ.Swimmable;
 
 public class Dolphin extends Mammal implements Swimmable {
     public Dolphin (double weight) {

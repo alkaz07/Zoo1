@@ -1,4 +1,7 @@
-public class Owl extends Bird implements Flyable{
+import classesAM.Bird;
+import interfacesAM.Flyable;
+
+public class Owl extends Bird implements Flyable {
     public Owl(double weight) {
         super(weight);
     }

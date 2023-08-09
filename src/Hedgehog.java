@@ -1,4 +1,8 @@
-public class Hedgehog extends Animal implements Runnable, Defendable{
+import classesAM.Animal;
+import interfacesAM.Defendable;
+import interfacesNZ.Runnable;
+
+public class Hedgehog extends Animal implements Runnable, Defendable {
     public Hedgehog(double weight) {
         super(weight);
     }

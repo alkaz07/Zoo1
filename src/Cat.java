@@ -1,5 +1,11 @@
+import classesAM.Mammal;
+import interfacesAM.Chasing;
+import interfacesAM.Jumpable;
+import interfacesNZ.Runnable;
+import interfacesNZ.WashUp;
+
 public class Cat {
-    public class Squirrel extends Mammal implements Jumpable,Runnable,WashUp,Chasing{
+    public class Squirrel extends Mammal implements Jumpable, Runnable, WashUp, Chasing {
 
         public Squirrel(double weight) {
             super(weight);

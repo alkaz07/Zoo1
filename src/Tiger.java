@@ -1,5 +1,11 @@
+import classesAM.Mammal;
+import interfacesAM.Huntable;
+import interfacesAM.Jumpable;
+import interfacesNZ.Runnable;
+import interfacesNZ.Sneakable;
+import interfacesNZ.Swimmable;
 
-public class Tiger extends Mammal implements Jumpable,Runnable,Swimmable,Sneakable,Huntable{
+public class Tiger extends Mammal implements Jumpable, Runnable, Swimmable, Sneakable, Huntable {
 
     public Tiger(double weight) {
         super(weight);

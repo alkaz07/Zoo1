@@ -1,4 +1,10 @@
-public class Fox extends Mammal implements Jumpable, Swimmable, Runnable, Huntable{
+import classesAM.Mammal;
+import interfacesAM.Huntable;
+import interfacesAM.Jumpable;
+import interfacesNZ.Runnable;
+import interfacesNZ.Swimmable;
+
+public class Fox extends Mammal implements Jumpable, Swimmable, Runnable, Huntable {
 
     public Fox(double weight) {
         super(weight);

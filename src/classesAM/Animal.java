@@ -1,3 +1,5 @@
+package classesAM;
+
 public abstract class Animal {
     double weight;
 

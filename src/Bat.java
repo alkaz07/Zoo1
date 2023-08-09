@@ -1,4 +1,7 @@
-public class Bat extends Mammal implements Flyable{
+import classesAM.Mammal;
+import interfacesAM.Flyable;
+
+public class Bat extends Mammal implements Flyable {
     public Bat(double weight) {
         super(weight);
     }

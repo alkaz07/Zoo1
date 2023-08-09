@@ -1,3 +1,7 @@
+import classesAM.Animal;
+import interfacesAM.Jumpable;
+import interfacesNZ.Swimmable;
+
 public class Penguin extends Animal implements Swimmable, Jumpable {
 
     public Penguin(double weight) {

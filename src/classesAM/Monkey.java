@@ -1,3 +1,10 @@
+package classesAM;
+
+import classesAM.Mammal;
+import interfacesAM.Igrimacable;
+import interfacesAM.Jumpable;
+import interfacesNZ.Swimmable;
+
 public class Monkey extends Mammal implements Jumpable, java.lang.Runnable, Swimmable, Igrimacable {
     public Monkey(double weight) {
         super(weight);
