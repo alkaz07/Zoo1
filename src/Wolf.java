@@ -10,6 +10,7 @@ public class Wolf extends Mammal implements Jumpable,Runnable,Swimmable,Sneakabl
             sneaking();
             jump();
         }
+
     private void sneaking() {
         System.out.println("Волк крадётся");
     }
