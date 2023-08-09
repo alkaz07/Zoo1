@@ -7,4 +7,5 @@ public class Eagle extends Bird implements Flyable{
     public void move() {
         System.out.println("Если только недалеко, а так летают");
     }
+
 }
