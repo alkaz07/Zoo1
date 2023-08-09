@@ -1,6 +1,6 @@
-public class wolf extends Mammal implements Jumpable,Runnable,Swimmable,Sneakable {
+public class Wolf extends Mammal implements Jumpable,Runnable,Swimmable,Sneakable {
 
-    public wolf(double weight) {
+    public Wolf(double weight) {
         super(weight);
     }
     @Override
@@ -10,6 +10,7 @@ public class wolf extends Mammal implements Jumpable,Runnable,Swimmable,Sneakabl
             sneaking();
             jump();
         }
+
     private void sneaking() {
         System.out.println("Волк крадётся");
     }
