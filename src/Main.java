@@ -20,8 +20,9 @@ public class Main {
         if (type.equals("Fox")) return new Fox(weight);
         if (type.equals("Owl")) return new Owl(weight);
         if (type.equals("GoldFish")) return new GoldFish(weight);
-        if (type.equals("Tiger")) return new Tiger(weight);
+       // if (type.equals("Tiger")) return new Tiger(weight);
         if (type.equals("Penguin")) return new Penguin(weight);
+        if (type.equals("Hedgehog")) return new Hedgehog(weight);
       //  if (type.equals("Cat")) return new Cat(weight);
         return null;
     }
