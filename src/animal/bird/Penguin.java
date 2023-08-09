@@ -4,7 +4,7 @@ import animal.Animal;
 import interfacesMove.Jumpable;
 import interfacesMove.Swimmable;
 
-public class Penguin extends Animal implements Swimmable, Jumpable {
+public class Penguin extends Bird implements Swimmable, Jumpable {
 
     public Penguin(double weight) {
         super(weight);

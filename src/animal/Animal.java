@@ -8,4 +8,15 @@ public abstract class Animal {
     }
 
     public abstract void move();
+
+    public double getWeight() {
+        return weight;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName()+"{" +
+                "weight=" + weight +
+                '}';
+    }
 }
