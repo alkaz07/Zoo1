@@ -1,4 +1,6 @@
-import classesAM.Animal;
+import classesAM.*;
+import classesNZ.Owl;
+import classesNZ.Penguin;
 import interfacesAM.Flyable;
 
 public class Main {
@@ -19,14 +21,14 @@ public class Main {
 
     public static Animal generateAnimal(String type, double weight)
     {
-        if (type.equals("Bat")) return new Bat(weight);
-        if (type.equals("Fox")) return new Fox(weight);
-        if (type.equals("Owl")) return new Owl(weight);
-        if (type.equals("GoldFish")) return new GoldFish(weight);
-       // if (type.equals("Tiger")) return new Tiger(weight);
-        if (type.equals("Penguin")) return new Penguin(weight);
-        if (type.equals("Hedgehog")) return new Hedgehog(weight);
-      //  if (type.equals("Cat")) return new Cat(weight);
+        if (type.equals("classesAM.Bat")) return new Bat(weight);
+        if (type.equals("classesAM.Fox")) return new Fox(weight);
+        if (type.equals("classesNZ.Owl")) return new Owl(weight);
+        if (type.equals("classesAM.GoldFish")) return new GoldFish(weight);
+       // if (type.equals("classesNZ.Tiger")) return new classesNZ.Tiger(weight);
+        if (type.equals("classesNZ.Penguin")) return new Penguin(weight);
+        if (type.equals("classesAM.Hedgehog")) return new Hedgehog(weight);
+      //  if (type.equals("classesAM.Cat")) return new classesAM.Cat(weight);
         return null;
     }
 }

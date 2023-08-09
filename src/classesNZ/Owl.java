@@ -1,3 +1,5 @@
+package classesNZ;
+
 import classesAM.Bird;
 import interfacesAM.Flyable;
 

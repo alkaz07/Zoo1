@@ -1,3 +1,5 @@
+package classesNZ;
+
 import classesAM.Animal;
 import interfacesAM.ColorChange;
 import interfacesAM.Jumpable;
@@ -34,6 +36,6 @@ public class Rabbit extends Animal implements Runnable, Jumpable, Swimmable, Col
 
     @Override
     public void colorChange() {
-        System.out.println("Rabbit has two fur coats");
+        System.out.println("classesNZ.Rabbit has two fur coats");
     }
 }

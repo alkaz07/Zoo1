@@ -1,3 +1,5 @@
+package classesAM;
+
 import classesAM.Mammal;
 import interfacesAM.Chasing;
 import interfacesAM.Jumpable;

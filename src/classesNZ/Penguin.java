@@ -1,3 +1,5 @@
+package classesNZ;
+
 import classesAM.Animal;
 import interfacesAM.Jumpable;
 import interfacesNZ.Swimmable;

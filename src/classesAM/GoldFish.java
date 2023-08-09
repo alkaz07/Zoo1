@@ -1,3 +1,5 @@
+package classesAM;
+
 public class GoldFish extends Fish{
     public GoldFish(double weight) {
         super(weight);
