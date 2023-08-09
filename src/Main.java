@@ -1,6 +1,7 @@
 import animal.Animal;
 import animal.bird.Bird;
 import animal.mammal.Bat;
+import animal.mammal.Cat;
 import animal.mammal.Fox;
 import animal.mammal.Hedgehog;
 import animal.fish.*;
