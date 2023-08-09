@@ -1,9 +1,6 @@
 import animal.Animal;
 import animal.bird.Bird;
-import animal.mammal.Bat;
-import animal.mammal.Cat;
-import animal.mammal.Fox;
-import animal.mammal.Hedgehog;
+import animal.mammal.*;
 import animal.fish.*;
 import animal.bird.Owl;
 import animal.bird.Penguin;
@@ -12,13 +9,46 @@ import interfacesMove.Crawl;
 import interfacesMove.Flyable;
 import interfacesMove.Jumpable;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
       //  exemple1();
-        exemple2();
+      //  exemple2();
+        exemple3();
+    }
+
+    private static void exemple3() {
+        ArrayList<Animal> animals = readAnimals("animals.txt");
+        System.out.println(animals);
+        //animals.sort(new ScalesForAnimals());
+        animals.sort((a, b) -> Double.compare(a.getWeight(), b.getWeight()));
+        System.out.println(animals);
+
+        //int x = Comparator.comparingDouble(Animal::getWeight).compare(animals.get(3), animals.get(4));
+
+    }
+
+    private static  ArrayList<Animal> readAnimals(String fname) {
+        ArrayList<Animal> animals = new ArrayList<>();
+        try{
+            Scanner scanner = new Scanner(new File(fname));
+            while (scanner.hasNextLine())
+            {
+                String s = scanner.nextLine();
+                Scanner parser = new Scanner(s);
+                String type = parser.next();
+                double w = parser.nextDouble();
+                animals.add(generateAnimal(type,w));
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("файл не открылся");
+        }
+        return animals;
     }
 
     private static void exemple2() {
@@ -66,7 +96,8 @@ public class Main {
         if (type.equals("Penguin")) return new Penguin(weight);
         if (type.equals("Hedgehog")) return new Hedgehog(weight);
         if (type.equals("Viper")) return new Viper(weight);
-        if (type.equals("Cat")) return new animal.mammal.Cat(weight);
+        if (type.equals("Cat")) return new Cat(weight);
+        if (type.equals("Rabbit")) return new Rabbit(weight);
         return null;
     }
 }

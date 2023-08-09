@@ -1,0 +1,10 @@
+Tiger 220
+Penguin 6
+Penguin 4
+Penguin 4,5
+GoldFish 1
+Viper 0,9
+Cat 2
+Cat 3,5
+Cat 5
+Rabbit 6
