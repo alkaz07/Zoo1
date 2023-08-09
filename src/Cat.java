@@ -1,5 +1,5 @@
 public class Cat {
-    public class Squirrel extends Mammal implements Jumpable,Runnable{
+    public class Squirrel extends Mammal implements Jumpable,Runnable,WashUp,Chasing{
 
         public Squirrel(double weight) {
             super(weight);
@@ -19,6 +19,16 @@ public class Cat {
         public void run() {
             System.out.println( "кошка бегает за мышкой");
 
+        }
+
+        @Override
+        public void wash() {
+            System.out.println("кошка моет лапки");
+        }
+
+        @Override
+        public void chasing() {
+            System.out.println("кошка охотиться на мышку");
         }
     }
 }
