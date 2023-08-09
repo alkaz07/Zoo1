@@ -1,4 +1,4 @@
-public class Fox extends Mammal implements Jumpable, Swimmable{
+public class Fox extends Mammal implements Jumpable, Swimmable, Runnable{
 
     public Fox(double weight) {
         super(weight);
@@ -6,6 +6,7 @@ public class Fox extends Mammal implements Jumpable, Swimmable{
 
     @Override
     public void move() {
+        run();
         jump();
         swim();
     }
@@ -18,5 +19,10 @@ public class Fox extends Mammal implements Jumpable, Swimmable{
     @Override
     public void swim() {
         System.out.println("Лисица редко плавает");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Лисица быстро бегает");
     }
 }
