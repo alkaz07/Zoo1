@@ -26,7 +26,11 @@ public class Tiger extends Mammal implements Jumpable,Runnable,Swimmable,Sneakab
         System.out.println("Тигр плавает");
     }
     @Override
-    public void sneaking() {
+    public void sneak() {
         System.out.println("Тигр крадётся");
+    }
+    @Override
+    public void hunt() {
+        System.out.println("Тигр охотится");
     }
 }
