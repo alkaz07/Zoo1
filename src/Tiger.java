@@ -9,7 +9,7 @@ public class Tiger extends Mammal implements Jumpable,Runnable,Swimmable,Sneakab
     public void move() {
         run();
         swim();
-        sneaking();
+        sneak();
         jump();
     }
 
