@@ -33,7 +33,7 @@ public class Cat {
         }
         @Override
         public void chasing() {
-            System.out.println("кошка охотиться на мышку");
+            System.out.println("кошка охотится на мышку");
         }
     }
 }
