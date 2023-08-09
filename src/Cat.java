@@ -17,7 +17,7 @@ public class Cat {
 
         @Override
         public void run() {
-            System.out.println( "кошка бегает за мышкой");
+            System.out.println( "кошка бегает за мухой");
 
         }
 
