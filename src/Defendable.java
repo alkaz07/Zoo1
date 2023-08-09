@@ -1,4 +1,4 @@
-public interface Defendable {
+public interface Defendable extends Rollable{
     void defend()
             ;
 }

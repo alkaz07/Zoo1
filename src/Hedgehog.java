@@ -16,7 +16,12 @@ public class Hedgehog extends Animal implements Runnable, Defendable{
     }
 
     @Override
-    public void defend() {
+    public void defend() { roll();
         System.out.println("ёжик защищается");
+    }
+
+    @Override
+    public void roll() {
+
     }
 }
