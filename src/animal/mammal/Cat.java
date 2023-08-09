@@ -5,10 +5,9 @@ import interfacesMove.Jumpable;
 import interfacesMove.Runnable;
 import interfacesBehaviour.WashUp;
 
-public class Cat {
-    public class Squirrel extends Mammal implements Jumpable, Runnable, WashUp, Chasing {
+public class Cat extends Mammal implements Jumpable, Runnable, WashUp, Chasing {
 
-        public Squirrel(double weight) {
+        public Cat(double weight) {
             super(weight);
         }
 
