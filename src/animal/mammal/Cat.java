@@ -36,4 +36,4 @@ public class Cat extends Mammal implements Jumpable, Runnable, WashUp, Chasing {
             System.out.println("кошка охотится на мышку");
         }
     }
-}
+

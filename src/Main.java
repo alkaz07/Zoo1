@@ -3,6 +3,7 @@ import animal.bird.Owl;
 import animal.bird.Penguin;
 import animal.fish.GoldFish;
 import animal.mammal.Bat;
+import animal.mammal.Cat;
 import animal.mammal.Fox;
 import animal.mammal.Hedgehog;
 import interfacesMove.Flyable;
