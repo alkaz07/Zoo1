@@ -1,5 +1,5 @@
 
-public class Tiger extends Mammal implements Jumpable{
+public class Tiger extends Mammal implements Jumpable,Runnable,Swimmable,Sneakable,Huntable{
 
     public Tiger(double weight) {
         super(weight);
@@ -26,7 +26,11 @@ public class Tiger extends Mammal implements Jumpable{
         System.out.println("Тигр плавает");
     }
     @Override
-    public void sneaking() {
+    public void sneak() {
         System.out.println("Тигр крадётся");
+    }
+    @Override
+    public void hunt() {
+        System.out.println("Тигр охотится");
     }
 }
