@@ -1,5 +1,5 @@
 
-public class Tiger extends Mammal implements Jumpable{
+public class Tiger extends Mammal implements Jumpable,Runnable,Swimmable,Sneakable{
 
     public Tiger(double weight) {
         super(weight);
