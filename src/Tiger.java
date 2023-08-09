@@ -7,6 +7,9 @@ public class Tiger extends Mammal implements Jumpable{
 
     @Override
     public void move() {
+        run();
+        swim();
+        sneaking();
         jump();
     }
 
@@ -14,4 +17,5 @@ public class Tiger extends Mammal implements Jumpable{
     public void jump() {
         System.out.println("Тигр прыгает");
     }
+    
 }
