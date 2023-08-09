@@ -1,7 +1,11 @@
-import classesAM.*;
-import classesNZ.Owl;
-import classesNZ.Penguin;
-import interfacesAM.Flyable;
+import animal.Animal;
+import animal.mammal.Bat;
+import animal.mammal.Fox;
+import animal.mammal.Hedgehog;
+import animal.fish.*;
+import animal.bird.Owl;
+import animal.bird.Penguin;
+import interfacesMove.Flyable;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,14 +25,14 @@ public class Main {
 
     public static Animal generateAnimal(String type, double weight)
     {
-        if (type.equals("classesAM.Bat")) return new Bat(weight);
-        if (type.equals("classesAM.Fox")) return new Fox(weight);
-        if (type.equals("classesNZ.Owl")) return new Owl(weight);
-        if (type.equals("classesAM.GoldFish")) return new GoldFish(weight);
-       // if (type.equals("classesNZ.Tiger")) return new classesNZ.Tiger(weight);
-        if (type.equals("classesNZ.Penguin")) return new Penguin(weight);
-        if (type.equals("classesAM.Hedgehog")) return new Hedgehog(weight);
-      //  if (type.equals("classesAM.Cat")) return new classesAM.Cat(weight);
+        if (type.equals("animal.mammal.Bat")) return new Bat(weight);
+        if (type.equals("animal.mammal.Fox")) return new Fox(weight);
+        if (type.equals("animal.bird.Owl")) return new Owl(weight);
+        if (type.equals("animal.classesAM.GoldFish")) return new GoldFish(weight);
+       // if (type.equals("animal.mammal.Tiger")) return new animal.mammal.Tiger(weight);
+        if (type.equals("animal.bird.Penguin")) return new Penguin(weight);
+        if (type.equals("animal.mammal.Hedgehog")) return new Hedgehog(weight);
+      //  if (type.equals("animal.mammal.Cat")) return new animal.mammal.Cat(weight);
         return null;
     }
 }
