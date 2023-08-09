@@ -25,7 +25,6 @@ public class Cat {
         public void wash() {
             System.out.println("кошка моет лапки");
         }
-
         @Override
         public void chasing() {
             System.out.println("кошка охотиться на мышку");
