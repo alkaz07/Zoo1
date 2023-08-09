@@ -1,4 +1,4 @@
-public abstract class Penguin extends Animal implements Swimmable {
+public class Penguin extends Animal implements Swimmable {
 
     public Penguin(double weight) {
         super(weight);
@@ -8,4 +8,6 @@ public abstract class Penguin extends Animal implements Swimmable {
     public void move() {
         swim();
     }
+    @Override
+    public void swim() {System.out.println("Пингвин плавает как показано в добром советском мультфильме 'Приключения пингвинёнка Лоло'.");}
 }
